@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+html{
+    position: relative;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0)),url(banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;   
+}
+#navbar{
+    background:#000; 
+    z-index: 10;
+    
+}
+nav img{
+    width: 80px;
+    height: 73px;
+    cursor: pointer;
+  //  margin-top:  12px;
+    margin-left: -150px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 5px;
+    transition: 0.5s;
+    color: gold;
+}
+
+nav ul li:hover{
+
+    border-bottom: 2px solid rgb(245, 229, 6);
+    color: gainsboro;
+
+}
+.main{
+    width: 70%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+.main h1{
+    padding: 10px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+
+}
+span{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    color: #f5c228;;
+}
+.main p{
+    padding: 10px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+.main button{
+    background: linear-gradient(to right,transparent 50%, #ffc107 50%);
+    background-size: 200%;
+    background-position: left;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #f5c228;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 15px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    transition: background-position 0.5s;
+}
+.main button:hover {
+    background-position: right;
+    color: #000;
+}
+.text{
+    width: 80%;
+    margin: 50px auto;
+    
+
+}
+nav .black{
+    background: #000;
+}
